@@ -29,10 +29,10 @@
 	 ADC1_Init(ADC1_CONVERSIONMODE_CONTINUOUS, 
              ADC_Channel_Number,
              ADC1_PRESSEL_FCPU_D18, 
-             ADC1_EXTTRIG_GPIO, 
+             ADC1_EXTTRIG_TIM, 
              DISABLE, 
              ADC1_ALIGN_RIGHT, 
-             ADC1_SCHMITTTRIG_CHANNEL0, 
+             ADC1_SCHMITTTRIG_ALL, 
              DISABLE);
                                                                                   
    ADC1_Cmd(ENABLE);
@@ -43,6 +43,8 @@
                                 
   result = ADC1_GetConversionValue();
   ADC1_ClearFlag(ADC1_FLAG_EOC);
+	
+	ADC1_DeInit();
 	
 	return result; 
  }
