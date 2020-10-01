@@ -11,4 +11,5 @@ https://circuitdigest.com/microcontroller-projects/gpio-functions-on-stm8s-using
 3. UART communication with STM8S - Basic Serial Read, write, for char and string
 https://circuitdigest.com/microcontroller-projects/serial-monitor-on-stm8s-using-cosmic-and-stvd
 
-4. 
+4. Interfacing 16x2 Alphanumeric LCD display with STM8 Microcontroller
+https://circuitdigest.com/microcontroller-projects/interfacing-16x2-lcd-display-with-stm8-microcontroller
