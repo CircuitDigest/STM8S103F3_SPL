@@ -24,7 +24,7 @@
 
  char Serial_read_char(void)
  {
-	 while (UART1_GetFlagStatus(UART1_FLAG_TXE) == RESET);
+	 while (UART1_GetFlagStatus(UART1_FLAG_RXE) == RESET);
 	 UART1_ClearFlag(UART1_FLAG_RXNE);
 	 return (UART1_ReceiveData8());
  }
